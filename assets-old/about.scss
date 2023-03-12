@@ -1,0 +1,170 @@
+@import "variables";
+.about-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-one {
+    background-position: top right;
+    background-repeat: no-repeat;
+    @include respond-to('-screen-lg') {
+        background-image: none !important;
+    }
+    &-wrapper {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+    h1 {
+        font-size: 45px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-hover;
+        margin-bottom: 35px;
+        padding: 0;
+    }
+    .sig {
+        display: block;
+        color: $color-text;
+        margin-bottom: 70px;
+    }
+    &-stat {
+        display: flex;
+        &-item {
+            margin-right: 100px;
+            span {
+                font-size: 54px;
+                line-height: 1;
+            }
+            small {
+                font-size: 16px;
+                line-height: 1;
+            }
+            span.desc {
+                font-size: 16px;
+                line-height: 1;
+            }
+            .line {
+                display: block;
+                width: 30px;
+                height: 2px;
+                background: $color-text;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.about-info {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 24px;
+            font-weight: 400px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-hover;
+            margin-bottom: 40px;
+            padding: 0;
+            text-align: center;
+            strong {
+                color: $color-text;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.about-stat {
+    h2 {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 400px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-hover;
+        margin-bottom: 30px;
+        padding: 0;
+        strong {
+            color: $color-text;
+            font-weight: 400;
+        }
+    }
+    .line-vertical {
+        height: 100%;
+        width: 100%;
+        border-right: 1px solid #D0D0D0;
+        @include respond-to('-screen-lg') {
+            margin-top: 50px;
+            height: 1px;
+            border-top: 1px solid #D0D0D0;
+        }
+    }
+    &-link {
+        display: flex;
+        flex-direction: column;
+        border-radius: $custom-border-radius;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        @extend .transition-3;
+        .nr {
+            font-size: 45px;
+            @include respond-to('-screen-lg') {
+                font-size: 34px;
+            }
+        }
+        span.desc {
+            font-size: 16px;
+            line-height: 1;
+            @include respond-to('-screen-lg') {
+                font-size: 12px;
+            }
+        }
+        .line {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: $color-text;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 0.26);
+            @extend .transition-3;
+            &:before {
+                content: "\e923";
+                font-family: 'icomoon' !important;
+                speak: never;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                position: absolute;
+                right: 32px;
+                top: 41px;
+                @include respond-to('-screen-lg') {
+                    right: 15px;
+                    top: 37px;
+                }
+            }
+        }
+    }
+}

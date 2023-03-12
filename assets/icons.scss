@@ -1,0 +1,260 @@
+:root {
+    --cat-color: #F5F5F5
+}
+
+.transition {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.icon-circle-dark:before,
+.icon-circle-dark i,
+.transition-3 {
+    transition: all .3s
+}
+
+.transition-3-delay {
+    transition: all .6s;
+    transition-delay: .25s
+}
+
+.img-absolute {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: bicubic;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 100%
+}
+
+.ratio {
+    overflow: hidden;
+    border-radius: 20px
+}
+
+.f-14 {
+    font-size: 14px
+}
+
+.f-16 {
+    font-size: 16px
+}
+
+@font-face {
+    font-family: icomoon;
+    src: url(../fonts/icomoon.eot?jzytb4);
+    src: url(../fonts/icomoon.eot?jzytb4#iefix) format("embedded-opentype"), url(../fonts/icomoon.ttf?jzytb4) format("truetype"), url(../fonts/icomoon.woff?jzytb4) format("woff"), url(../fonts/icomoon.svg?jzytb4#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+    font-family: icomoon!important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-circle-dark {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+
+.icon-circle-dark:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: block;
+    background: #000;
+    z-index: 1
+}
+
+.icon-circle-dark.__gray:before {
+    background: #707070
+}
+
+.icon-circle-dark.__white {
+    border: 2px solid #fff
+}
+
+.icon-circle-dark.__white:before {
+    background: #fff
+}
+
+.icon-circle-dark.__white i {
+    color: #000
+}
+
+.icon-circle-dark.__white i:before {
+    font-size: 20px;
+    color: #000
+}
+
+.icon-circle-dark i {
+    font-size: 13px;
+    z-index: 2
+}
+
+.icon-11 {
+    font-size: 11px
+}
+
+.icon-12 {
+    font-size: 12px
+}
+
+.icon-search1:before {
+    content: "\e900";
+  }
+  .icon-heart:before {
+    content: "\e901";
+  }
+  .icon-right:before {
+    content: "\e902";
+  }
+  .icon-check:before {
+    content: "\e903";
+  }
+  .icon-phone:before {
+    content: "\e904";
+  }
+  .icon-box:before {
+    content: "\e905";
+  }
+  .icon-shield:before {
+    content: "\e906";
+  }
+  .icon-cert:before {
+    content: "\e907";
+  }
+  .icon-mouse:before {
+    content: "\e908";
+  }
+  .icon-phone-dark:before {
+    content: "\e909";
+  }
+  .icon-box2:before {
+    content: "\e90a";
+  }
+  .icon-pin:before {
+    content: "\e90b";
+  }
+  .icon-doc:before {
+    content: "\e90c";
+  }
+  .icon-off:before {
+    content: "\e90d";
+  }
+  .icon-warning:before {
+    content: "\e90e";
+  }
+  .icon-quote:before {
+    content: "\e90f";
+  }
+  .icon-time:before {
+    content: "\e910";
+  }
+  .icon-pin-bold:before {
+    content: "\e911";
+  }
+  .icon-doc2:before {
+    content: "\e912";
+  }
+  .icon-left:before {
+    content: "\e913";
+  }
+  .icon-email:before {
+    content: "\e914";
+  }
+  .icon-Path-513:before {
+    content: "\e915";
+  }
+  .icon-email-dark:before {
+    content: "\e916";
+  }
+  .icon-user:before {
+    content: "\e917";
+  }
+  .icon-return:before {
+    content: "\e918";
+  }
+  .icon-uniE91A:before {
+    content: "\e91a";
+  }
+  .icon-plus:before {
+    content: "\e91b";
+  }
+  .icon-trash:before {
+    content: "\e91c";
+  }
+  .icon-privacy:before {
+    content: "\e91d";
+  }
+  .icon-term:before {
+    content: "\e91e";
+  }
+  .icon-uniE91F:before {
+    content: "\e91f";
+  }
+  .icon-uniE920:before {
+    content: "\e920";
+  }
+  .icon-square:before {
+    content: "\e922";
+  }
+  .icon-icon-next:before {
+    content: "\e923";
+  }
+  .icon-icon-prev:before {
+    content: "\e924";
+  }
+  .icon-cart:before {
+    content: "\e925";
+  }
+  .icon-checkin:before {
+    content: "\e926";
+  }
+  .icon-home:before {
+    content: "\e927";
+  }
+  .icon-menu:before {
+    content: "\e928";
+  }
+  .icon-arrow-down-sign-to-navigate:before {
+    content: "\e929";
+  }
+  .icon-navigate-up-arrow:before {
+    content: "\e92a";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+
+
+/*# sourceMappingURL=icons.css.map */

@@ -1,0 +1,323 @@
+:root {
+  --cat-color: rgb(245, 245, 245);
+}
+
+.transition {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.transition-3, .about-stat-link:hover, .about-stat-link {
+  transition: 0.3s all;
+}
+
+.transition-3-delay {
+  transition: 0.6s all;
+  transition-delay: 250ms;
+}
+
+.img-absolute {
+  image-rendering: optimizeSpeed;
+  /* Legal fallback                 */
+  image-rendering: -moz-crisp-edges;
+  /* Firefox                        */
+  image-rendering: -o-crisp-edges;
+  /* Opera                          */
+  image-rendering: -webkit-optimize-contrast;
+  /* Chrome (and eventually Safari) */
+  image-rendering: crisp-edges;
+  /* CSS3 Proposed                  */
+  -ms-interpolation-mode: bicubic;
+  /* IE8+                           */
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.ratio {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.about-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-download {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.about-download-wrapper {
+  width: 828px;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .about-download-wrapper {
+    width: 717px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-download-wrapper {
+    width: 500px;
+    max-width: 90%;
+  }
+}
+.about-download-section1 {
+  margin-bottom: 28px;
+}
+.about-download-h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  padding: 62px 0 36px;
+  margin-left: 5px;
+}
+.about-download-h3 {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 17px;
+}
+.about-download-box {
+  width: 100%;
+  color: #707070;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.about-download-box a {
+  color: #707070;
+  white-space: nowrap;
+}
+.about-download-box p {
+  margin-top: 16px;
+  white-space: nowrap;
+}
+.about-download-box:hover {
+  color: #000;
+}
+.about-download-box:hover a {
+  color: #000;
+  text-decoration: underline;
+}
+.about-download-box:hover .about-download-svg-color {
+  stroke: #000;
+}
+.about-download-box-left {
+  display: flex;
+  padding: 4px 0 4px 20px;
+  align-items: center;
+}
+.about-download-filename {
+  margin-left: 17px;
+  margin-right: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 992px) {
+  .about-download-filename {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-download-filename {
+    max-width: 90px;
+  }
+}
+.about-download-link {
+  margin-right: 28px;
+}
+.about-download-line {
+  width: 100%;
+  border: 1px solid #707070;
+  margin-top: 105px;
+}
+
+.about-one {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .about-one {
+    background-image: none !important;
+  }
+}
+.about-one-wrapper {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.about-one h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.about-one p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 35px;
+  padding: 0;
+}
+.about-one .sig {
+  display: block;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.about-one-stat {
+  display: flex;
+}
+.about-one-stat-item {
+  margin-right: 100px;
+}
+.about-one-stat-item span {
+  font-size: 54px;
+  line-height: 1;
+}
+.about-one-stat-item small {
+  font-size: 16px;
+  line-height: 1;
+}
+.about-one-stat-item span.desc {
+  font-size: 16px;
+  line-height: 1;
+}
+.about-one-stat-item .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-info-wrapper h2 {
+  font-size: 24px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-info-wrapper p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 40px;
+  padding: 0;
+  text-align: center;
+}
+.about-info-wrapper p strong {
+  color: #000000;
+  font-weight: 400;
+}
+
+.about-stat h2 {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+.about-stat p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.about-stat p strong {
+  color: #000000;
+  font-weight: 400;
+}
+.about-stat .line-vertical {
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid #D0D0D0;
+}
+@media (max-width: 991px) {
+  .about-stat .line-vertical {
+    margin-top: 50px;
+    height: 1px;
+    border-top: 1px solid #D0D0D0;
+  }
+}
+.about-stat-link {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.about-stat-link .nr {
+  font-size: 45px;
+}
+@media (max-width: 991px) {
+  .about-stat-link .nr {
+    font-size: 34px;
+  }
+}
+.about-stat-link span.desc {
+  font-size: 16px;
+  line-height: 1;
+}
+@media (max-width: 991px) {
+  .about-stat-link span.desc {
+    font-size: 12px;
+  }
+}
+.about-stat-link .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-stat-link:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+.about-stat-link:hover:before {
+  content: "\e923";
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 32px;
+  top: 41px;
+}
+@media (max-width: 991px) {
+  .about-stat-link:hover:before {
+    right: 15px;
+    top: 37px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

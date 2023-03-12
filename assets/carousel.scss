@@ -1,0 +1,140 @@
+@import "variables";
+.carousel {
+    &-wrap {
+        position: relative;
+    }
+    &-indicators {
+        position: relative;
+        text-indent: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        [data-bs-target] {
+            width: 200px;
+            height: 200px;
+            background: transparent;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 140px;
+            }
+            &.active {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    border: 10px solid #fff;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    left: 0;
+                    z-index: -1;
+                    transition: 0.5s all;
+                    left: 50%;
+                    margin-left: -50px;
+                }
+            }
+        }
+    }
+    &-item {
+        .carousel-caption {
+            position: relative;
+            height: 530px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            right: inherit;
+            bottom: inherit;
+            left: inherit;
+            z-index: 10;
+            color: #fff;
+            text-align: left;
+            padding-bottom: 0;
+            padding-top: 0;
+            align-items: flex-start;
+            h5 {
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: left;
+                margin-bottom: 20px;
+                .main {
+                    font-size: 64px;
+                    color: $color-text;
+                    line-height: 60px;
+                }
+                .sub {
+                    display: block;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: $color-hover;
+                }
+            }
+            .desc {
+                font-size: 16px;
+                line-height: 27px;
+                text-align: left;
+                color: $color-text;
+            }
+        }
+    }
+    &-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-text;
+        img {
+            max-height: 400px;
+            width: auto;
+        }
+    }
+    &-arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        // border: 1px solid #000;
+        border-radius: 50%;
+        background: #fff;
+        width: 46px;
+        height: 46px;
+        margin-top: -23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 1px solid #000;
+            opacity: 0;
+            border-radius: 50%;
+            transition: 0.3s all;
+        }
+        &:hover {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                opacity: 1;
+                transition: 0.3s all;
+            }
+        }
+        i:before {
+            color: #000;
+            font-size: 22px;
+        }
+        &__prev {
+            left: -12px;
+        }
+        &__next {
+            right: -12px;
+        }
+    }
+}

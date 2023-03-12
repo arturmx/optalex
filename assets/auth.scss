@@ -1,0 +1,129 @@
+@import "variables";
+html,
+body {
+    width: 100%;
+    margin: 0;
+    transition: none;
+    height: 100%;
+    background: $color-light;
+}
+
+body {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%;
+    border: 0;
+}
+
+#wc-logo {
+    border: 0;
+    margin: 0 0 24px;
+    padding: 0;
+    text-align: center;
+    img {
+        max-width: 50%;
+    }
+}
+
+.wc-auth {
+    .max-404 {
+        max-width: 404px;
+    }
+    .image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $color-bg;
+        // background-attachment: fixed;
+    }
+    .form-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 85px 0;
+        width: 100%;
+        span {
+            font-size: 18px;
+        }
+        @include respond-to('-screen-lg') {
+            margin: 20px 0 45px 0;
+        }
+    }
+    .form-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 30px;
+        h1 {
+            font-size: 18px;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        &-link {
+            color: $color-hover;
+            font-size: 14px;
+            a {
+                text-decoration: underline;
+                color: $color-text;
+            }
+        }
+    }
+    label {
+        font-size: 14px;
+        line-height: 1;
+        color: $color-hover;
+    }
+    .input-text {
+        box-sizing: border-box;
+        width: 100%;
+        outline: 0;
+        line-height: normal;
+        padding: 15px 20px;
+        border: 0;
+        border-radius: 4px;
+        font-size: 14px;
+        margin: 7px 0 0;
+        background: $color-bg;
+    }
+    .form-info {
+        margin-top: 50px;
+        @include respond-to('-screen-lg') {
+            margin-top: 30px;
+        }
+    }
+    .woocommerce-error,
+    .woocommerce-info,
+    .woocommerce-message {
+        padding: 15px;
+        margin: 0 0 2em;
+        position: relative;
+        background-color: $pink;
+        color: #515151;
+        border-top: 3px solid #fff;
+        list-style: none outside;
+        width: auto;
+        word-wrap: break-word;
+        border-radius: 20px;
+    }
+    .form-remember {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            text-decoration: underline;
+            color: $color-text;
+        }
+    }
+    .error {
+        label {
+            color: #C9000B;
+        }
+        .input-text {
+            border: 1px solid #C9000B;
+            color: #C9000B
+        }
+    }
+}
